@@ -510,6 +510,53 @@ h1, h2, h3, h4 {
   line-height: 1.7;
 }
 
+/* ===== REVIEWS ===== */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  margin-top: 60px;
+}
+
+.review-card {
+  background: var(--bg-card);
+  padding: 40px 32px;
+  border: 1px solid transparent;
+  transition: all var(--transition);
+}
+
+.review-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border);
+}
+
+.review-stars {
+  color: var(--accent);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.review-author {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.review-source {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
 /* ===== CTA ===== */
 .cta-section {
   padding: 120px 0;
@@ -972,6 +1019,9 @@ h1, h2, h3, h4 {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1045,6 +1095,10 @@ h1, h2, h3, h4 {
   }
 
   .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid {
     grid-template-columns: 1fr;
   }
 
